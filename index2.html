@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SellMyBook</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="loginScreen">
+	<div data-role="header" data-theme="b">
+		<h1>SellMyBook</h1>
+	</div>
+
+	<div role="main" class="ui-content">
+
+            <h2 data-role="content" class="mc-text-center">Welcome!</h2>
+
+            <p class="mc-top-margin-1-5" data><b>Existing Users</b></p>
+
+            <a href="#mainScreen" class="ui-btn ui-btn-b ui-corner-all">Sign In</a>
+
+            <p class="mc-top-margin-1-5"><b>Don't have an account?</b></p>
+
+            <a href="#mainScreen" class="ui-btn ui-btn-b ui-corner-all">Sign Up</a>
+	</div>
+</div>
+
+
+
+<div data-role="page" id="mainScreen">
+
+	<div data-role="header" data-position-fixed="true">
+		<h1>DASHBOARD</h1>
+		 <a href="#bars" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+		 <a href="#userSetting" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a>
+	
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<p>Welcome to the SellMyBook app. Our goal is to help you find the cheapest book for school.</p>
+	</div><!-- /content -->
+
+
+	<div data-role="panel" id="bars" data-theme="c" data-display="push">
+   		<ul data-role="listview">
+    		
+    			
+    			<ul data-role="listview" data-theme="b">
+    				<li data-role="list-divider" data-role="list-divider" data-theme="a">SEARCH FOR BOOKS</li>
+    				<li><a href="#">Subjects</a></li>
+    				<li><a href="#">ISBN Lookup</a></li>
+    				<li><a href="#">Schools</a></li>
+    				<li><a href="#">Programing</a></li>
+    				<li><a href="#">Miscellaneous</a></li>
+				</ul>
+    		
+		</ul>
+	</div><!-- /panel -->
+
+	<div data-role="panel" id="userSetting" data-theme="a" data-position="right" data-position-fixed="true" data-display="push">
+		
+		<ul data-role="listview">	
+			<div data-role="listview" class="userData" >
+		    	<li data-role="list-divider" data-theme="a">USER INFO</li>
+		    	<li><a href="#">Audi</a></li>
+		    	<li><a href="#">BMW</a></li>
+		    	<li><a href="#">Cadillac</a></li>
+		    	<li><a href="#">Chrysler</a></li>
+		    	<li><a href="#">Dodge</a></li>
+		    	<li><a href="#">Ferrari</a></li>
+		    	<li><a href="#">Ford</a></li>
+		    	<li><a href="#">GMC</a></li>
+		    	<li><a href="#">Honda</a></li>
+		    	<li><a href="#">Hyundai</a></li>
+		    	<li><a href="#">Infiniti</a></li>
+		    	<li><a href="#">Jeep</a></li>
+		    	<li><a href="#">Kia</a></li>
+		    	<li><a href="#">Lexus</a></li>
+		    	<li><a href="#">Mini</a></li>
+		    	<li><a href="#">Nissan</a></li>
+		    	<li><a href="#">Porsche</a></li>
+		   	 	<li><a href="#">Subaru</a></li>
+		    	<li><a href="#">Toyota</a></li>
+		    	<li><a href="#">Volkswagen</a></li>
+		    	<li><a href="#">Volvo</a></li>
+			</div>
+		</ul>
+	</div><!-- /panel -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
